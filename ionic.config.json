@@ -1,0 +1,7 @@
+{
+  "name": "QRCodeGenerator",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

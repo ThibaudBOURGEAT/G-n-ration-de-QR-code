@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Accueil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button secondary full (click)="scanQRCode()">Scan QRCode</button>
+  <button ion-button secondary full (click)="scanPictureQRCode()">Scan Image</button>
+  <ion-card *ngIf="qrDecode != null">
+      <ion-card-content>
+        <ion-card-title style="text-align: center;">
+          Texte :
+        </ion-card-title>
+        <p>{{qrDecode}}</p>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
